@@ -60,8 +60,8 @@ namespace LDSMovies
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    name: "home",
+                    template: "{controller=Movies}/{action=Index}/{id?}");
             });
         }
     }
